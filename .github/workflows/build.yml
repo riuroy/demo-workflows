@@ -1,6 +1,7 @@
 on: push
 jobs:
   first-job:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
+    container: python:3.8.19
     steps:
       - run: python3 --version
